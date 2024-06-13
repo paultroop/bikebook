@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Public Rights of Way | Bike Book</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Public Rights of Way | Bike Book" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Public Rights of Way | Bike Book" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Paul Troop" />
+
+
+<meta name="date" content="2024-06-13" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="cross.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#usage"><i class="fa fa-check"></i><b>1.1</b> Usage</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#render-book"><i class="fa fa-check"></i><b>1.2</b> Render book</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#preview-book"><i class="fa fa-check"></i><b>1.3</b> Preview book</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="public-rights-of-way.html"><a href="public-rights-of-way.html"><i class="fa fa-check"></i><b>2</b> Public Rights of Way</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="public-rights-of-way.html"><a href="public-rights-of-way.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="public-rights-of-way.html"><a href="public-rights-of-way.html#definitions"><i class="fa fa-check"></i><b>2.2</b> Definitions</a></li>
+<li class="chapter" data-level="2.3" data-path="public-rights-of-way.html"><a href="public-rights-of-way.html#ownership-of-the-highway-by-the-highway-authority"><i class="fa fa-check"></i><b>2.3</b> Ownership of the Highway by the Highway Authority</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="public-rights-of-way.html"><a href="public-rights-of-way.html#minimum-widths"><i class="fa fa-check"></i><b>2.3.1</b> Minimum Widths</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="public-rights-of-way.html"><a href="public-rights-of-way.html#publically-maintainable"><i class="fa fa-check"></i><b>2.4</b> Publically Maintainable</a></li>
+<li class="chapter" data-level="2.5" data-path="public-rights-of-way.html"><a href="public-rights-of-way.html#duty-to-maintain"><i class="fa fa-check"></i><b>2.5</b> Duty to Maintain</a></li>
+<li class="chapter" data-level="2.6" data-path="public-rights-of-way.html"><a href="public-rights-of-way.html#standard-of-maintenance-by-the-highway-authority"><i class="fa fa-check"></i><b>2.6</b> Standard of Maintenance by the Highway Authority</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="public-rights-of-way.html"><a href="public-rights-of-way.html#complaints-of-failure-to-repair"><i class="fa fa-check"></i><b>2.6.1</b> Complaints of Failure to Repair</a></li>
+<li class="chapter" data-level="2.6.2" data-path="public-rights-of-way.html"><a href="public-rights-of-way.html#damages-for-breach-of-duty"><i class="fa fa-check"></i><b>2.6.2</b> Damages for Breach of Duty</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="public-rights-of-way.html"><a href="public-rights-of-way.html#improvements"><i class="fa fa-check"></i><b>2.7</b> Improvements</a></li>
+<li class="chapter" data-level="2.8" data-path="public-rights-of-way.html"><a href="public-rights-of-way.html#remedies-for-damage-caused-by-third-parties"><i class="fa fa-check"></i><b>2.8</b> Remedies for Damage caused by Third Parties</a></li>
+<li class="chapter" data-level="2.9" data-path="public-rights-of-way.html"><a href="public-rights-of-way.html#obligations-of-neighbouring-landowners"><i class="fa fa-check"></i><b>2.9</b> Obligations of Neighbouring Landowners</a></li>
+<li class="chapter" data-level="2.10" data-path="public-rights-of-way.html"><a href="public-rights-of-way.html#planning-permission"><i class="fa fa-check"></i><b>2.10</b> Planning permission</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="cross.html"><a href="cross.html"><i class="fa fa-check"></i><b>3</b> Cross-references</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="cross.html"><a href="cross.html#chapters-and-sub-chapters"><i class="fa fa-check"></i><b>3.1</b> Chapters and sub-chapters</a></li>
+<li class="chapter" data-level="3.2" data-path="cross.html"><a href="cross.html#captioned-figures-and-tables"><i class="fa fa-check"></i><b>3.2</b> Captioned figures and tables</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="parts.html"><a href="parts.html"><i class="fa fa-check"></i><b>4</b> Parts</a></li>
+<li class="chapter" data-level="5" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html"><i class="fa fa-check"></i><b>5</b> Footnotes and citations</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#footnotes"><i class="fa fa-check"></i><b>5.1</b> Footnotes</a></li>
+<li class="chapter" data-level="5.2" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#citations"><i class="fa fa-check"></i><b>5.2</b> Citations</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="blocks.html"><a href="blocks.html"><i class="fa fa-check"></i><b>6</b> Blocks</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="blocks.html"><a href="blocks.html#equations"><i class="fa fa-check"></i><b>6.1</b> Equations</a></li>
+<li class="chapter" data-level="6.2" data-path="blocks.html"><a href="blocks.html#theorems-and-proofs"><i class="fa fa-check"></i><b>6.2</b> Theorems and proofs</a></li>
+<li class="chapter" data-level="6.3" data-path="blocks.html"><a href="blocks.html#callout-blocks"><i class="fa fa-check"></i><b>6.3</b> Callout blocks</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="sharing-your-book.html"><a href="sharing-your-book.html"><i class="fa fa-check"></i><b>7</b> Sharing your book</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="sharing-your-book.html"><a href="sharing-your-book.html#publishing"><i class="fa fa-check"></i><b>7.1</b> Publishing</a></li>
+<li class="chapter" data-level="7.2" data-path="sharing-your-book.html"><a href="sharing-your-book.html#pages"><i class="fa fa-check"></i><b>7.2</b> 404 pages</a></li>
+<li class="chapter" data-level="7.3" data-path="sharing-your-book.html"><a href="sharing-your-book.html#metadata-for-sharing"><i class="fa fa-check"></i><b>7.3</b> Metadata for sharing</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Bike Book</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="public-rights-of-way" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Public Rights of Way<a href="public-rights-of-way.html#public-rights-of-way" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="introduction" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Introduction<a href="public-rights-of-way.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This chapter is about public rights of way usable by cyclists, in particular bridleways. In summary, under civil law, cyclists have the right to use bridleways, but not footpaths.<span class="citation"><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></span> If a cyclist rides on a footpath, they commit the civil tort of trespass and can be liable to being sued by the landowner. However, cycling on a footpath is not generally a criminal or road traffic offence without specific provision. When exercising their right to use a bridleway, cyclists must give way to pedestrians and horseback riders.<span class="citation"><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></span></p>
+<p>Bridleways are potentially very useful cycling connections, given that they often connect towns and villages which are otherwise only connected by motor vehicle carriageways where the speed limit is 60mph, making them unsuitable for cycling. Most highways authorities maintain a map of public rights of way. For example Oxfordshire’s is listed <a href="https://publicrightsofway.oxfordshire.gov.uk/">here</a>.</p>
+<p>However, where the highway authority has a duty to maintain bridleways for walking and horseriding, they are not obliged to do so for cycling<span class="citation"><a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></span> <span class="citation"><a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></span>. In addition to budget constraints, this means that the maintenance of bridleways in a way that would be suitable for cycling depends on the outlook of the particular highways authority.</p>
+<p>Most bridleways are maintainable at public expense. Maintenance of bridleways needs to be distinguished from improvement. The highways authority has the right to maintain bridleways, but generally needs to seek the permission of the landowner to improve bridleways [QUERY].</p>
+<!-- All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (`#`) per .Rmd file. -->
+</div>
+<div id="definitions" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Definitions<a href="public-rights-of-way.html#definitions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<!-- All chapter sections start with a second-level (`##`) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter. -->
+<p>Important definitions are included in the Highways Act 1980.<span class="citation"><a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></span> In particular:</p>
+<blockquote>
+<p>“bridleway” means a highway over which the public have the following, but no other,
+rights of way, that is to say, a right of way on foot and a right of way on horseback or leading a horse, with or without a right to drive animals of any description along the highway;</p>
+</blockquote>
+<blockquote>
+<p>“footpath” means a highway over which the public have a right of way on foot only, not being a footway;</p>
+</blockquote>
+<p>Note that notwithstanding the definition of bridleway in the Highways Act 1980,<span class="citation"><a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></span> cyclists have the right to use bridleways under the Countryside Act 1968.<span class="citation"><a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></span></p>
+<p>DEFINITION OF RESTRICTED BYWAY? (highways with rights of way on foot, horseback, or non-mechanically propelled vehicles),<span class="citation"><a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></span></p>
+</div>
+<div id="ownership-of-the-highway-by-the-highway-authority" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Ownership of the Highway by the Highway Authority<a href="public-rights-of-way.html#ownership-of-the-highway-by-the-highway-authority" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As one notable publication has observed, one of the most difficult things from a landowner’s point of view to accept is that the surface of a publicly maintainable right of way is vested in the highway authority.<span class="citation"><a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a></span> Every highway surface, including the materials and scrapings (debris and by-products of highway resurfacing) belongs to the highway authority.<span class="citation"><a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a></span></p>
+<p>Above the surface, ownership has been said to include such a section of the air above the surface as is necessary for the discharge of the highway authority’s duties.<span class="citation"><a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a></span> Below the surface, ownership has been said to include as much depth as is necessary to support the surface of the road<span class="citation"><a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a></span> or the ‘top two spits’ (a spit is the depth of the blade of a spade).<span class="citation"><a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a></span> As such, a highway authority may not excavate far below the highway for non-highway purposes such as the construction of public toilets.<span class="citation"><a href="#fn14" class="footnote-ref" id="fnref14"><sup>14</sup></a></span></p>
+<div id="minimum-widths" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Minimum Widths<a href="public-rights-of-way.html#minimum-widths" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Minimum and maximum widths of highways are set by the HA 1980.<span class="citation"><a href="#fn15" class="footnote-ref" id="fnref15"><sup>15</sup></a></span> For a bridleway, the minimum width of a cross-field path is 2m and a field-edge path is 3m.<span class="citation"><a href="#fn16" class="footnote-ref" id="fnref16"><sup>16</sup></a></span> The maximum width is 3m.<span class="citation"><a href="#fn17" class="footnote-ref" id="fnref17"><sup>17</sup></a></span></p>
+</div>
+</div>
+<div id="publically-maintainable" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Publically Maintainable<a href="public-rights-of-way.html#publically-maintainable" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The burden is on a highway authority to prove that a highway is not maintainable by them.<span class="citation"><a href="#fn18" class="footnote-ref" id="fnref18"><sup>18</sup></a></span> There is some evidence that highways authorities take the view that it is less expensive to assume that highways are publicly maintainable than to question the point.<span class="citation"><a href="#fn19" class="footnote-ref" id="fnref19"><sup>19</sup></a></span></p>
+</div>
+<div id="duty-to-maintain" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Duty to Maintain<a href="public-rights-of-way.html#duty-to-maintain" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The highway authority has the duty to maintain highwys.<span class="citation"><a href="#fn20" class="footnote-ref" id="fnref20"><sup>20</sup></a></span> The duty to maintain includes the surface,<span class="citation"><a href="#fn21" class="footnote-ref" id="fnref21"><sup>21</sup></a></span> the drains beneath or beyond the traffic surface…<span class="citation"><a href="#fn22" class="footnote-ref" id="fnref22"><sup>22</sup></a></span></p>
+<p>By law, ‘maintenance’ includes ‘repair’.<span class="citation"><a href="#fn23" class="footnote-ref" id="fnref23"><sup>23</sup></a></span></p>
+<p>In the case of<span class="citation"><a href="#fn24" class="footnote-ref" id="fnref24"><sup>24</sup></a></span> Hereford &amp; Worcester CC v Newman [1975] 1 WLR 901, it was held that to be out of repair, the surface of the highway needed to be defective or disturbed in some way. Thus vegetation growing on the surface of a footpath making it difficult to navigate rendered it out of repair, but a multi-stranded barbed wire fence above the surface of the footpath did not. Given the recognition that ownership of a highway includes such of the subtrata and the space above the surface that is necessary to discharge the highway authority’s duties in addition to just the surface and that maintenance includes the drains beneath the traffic surface, this decision seems surprising and may well have been wrongly decided (MacKenna J dissented in that case).</p>
+<p>***‘No civil cause of action arises under s 150; the remedy for breach lies in a complaint to the magistrates, court, which has the power to order removal of any obstruction on the highway (s 150(2)). By virtue of the fact that a specific and separate duty arises under s 150 to remove debris/obstructions on the Highway, the Court of Appeal has held that such a duty is not encapsulated within s 41. That duty relates to the fabric of the highway alone see Valentine v Transport for London and another [2010] EWCA Civ 1358, at para 12.’</p>
+<p>Though the primary obligation to maintain highways falls on the highway authority, district councils have the power to maintain certain highways<span class="citation"><a href="#fn25" class="footnote-ref" id="fnref25"><sup>25</sup></a></span> including bridleways and restricted byways<span class="citation"><a href="#fn26" class="footnote-ref" id="fnref26"><sup>26</sup></a></span> and the highways authority is obliged to compensate the district council for any expenses incurred by them in doing so.<span class="citation"><a href="#fn27" class="footnote-ref" id="fnref27"><sup>27</sup></a></span></p>
+</div>
+<div id="standard-of-maintenance-by-the-highway-authority" class="section level2 hasAnchor" number="2.6">
+<h2><span class="header-section-number">2.6</span> Standard of Maintenance by the Highway Authority<a href="public-rights-of-way.html#standard-of-maintenance-by-the-highway-authority" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>CHECK WESTLAW ENCYCLOPEDIA OF HIGHWAY LAW AND PRACTICE</p>
+<p>There are no statutory guidelines for the standards required to maintain bridleways.<span class="citation"><a href="#fn28" class="footnote-ref" id="fnref28"><sup>28</sup></a></span></p>
+<p>Under common-law highway authority liable to maintain a highway is required to keep the road in a state of repair so as to be reasonably passable for the ordinary traffic of the neighbourhood for all seasons of the year<span class="citation"><a href="#fn29" class="footnote-ref" id="fnref29"><sup>29</sup></a></span> <span class="citation"><a href="#fn30" class="footnote-ref" id="fnref30"><sup>30</sup></a></span>.<span class="citation"><a href="#fn31" class="footnote-ref" id="fnref31"><sup>31</sup></a></span> It is not a defence to failure to maintain for the highways authority to say that its resources were insufficient.<span class="citation"><a href="#fn32" class="footnote-ref" id="fnref32"><sup>32</sup></a></span></p>
+<p>Similarly to the provisions regarding bridleways contained in the CA 1968,<span class="citation"><a href="#fn33" class="footnote-ref" id="fnref33"><sup>33</sup></a></span> on ‘restricted byways’ (highways with rights of way on foot, horseback, or non-mechanically propelled vehicles),<span class="citation"><a href="#fn34" class="footnote-ref" id="fnref34"><sup>34</sup></a></span> highways authorities are not required to provide a ‘metalled’ or other ‘bound’ surface (eg asphalt, concrete, or clay pavers) suitable for cycling.<span class="citation"><a href="#fn35" class="footnote-ref" id="fnref35"><sup>35</sup></a></span></p>
+<p>Other common-law guidance regarding maintenance is provided in the context of personal injury actions against highway authorities<span class="citation"><a href="#fn36" class="footnote-ref" id="fnref36"><sup>36</sup></a></span> <span class="citation"><a href="#fn37" class="footnote-ref" id="fnref37"><sup>37</sup></a></span><span class="citation"><a href="#fn38" class="footnote-ref" id="fnref38"><sup>38</sup></a></span> <span class="citation"><a href="#fn39" class="footnote-ref" id="fnref39"><sup>39</sup></a></span>, but these are primarily focussed on the issue of whether the danger posed by the highway is reasonably foreseeable rather than whether the highway is reasonably passable so are not entirely relevant. Also, all of these cases are in the context of urban highways rather than rural highways where the standard of maintenance is generally accepted to be lower because defects in country highways are more foreseeable. There also seem to be few, if any, reported cases of personal injury actions where a user has been injured by an unsafe rural footpath or bridleway. An interesting question arises as to whether highways authorities would be liable to an injured cyclist if a bridleway was foreseeably dangerous, given the lack of a statutory obligation to make highways suitable for cycling under the CA 1968<span class="citation"><a href="#fn40" class="footnote-ref" id="fnref40"><sup>40</sup></a></span> and the CRWA 2000.<span class="citation"><a href="#fn41" class="footnote-ref" id="fnref41"><sup>41</sup></a></span></p>
+<div id="complaints-of-failure-to-repair" class="section level3 hasAnchor" number="2.6.1">
+<h3><span class="header-section-number">2.6.1</span> Complaints of Failure to Repair<a href="public-rights-of-way.html#complaints-of-failure-to-repair" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There is a procedure to enforce the highway authority’s duty to repair highways. A complainant serves a notice on the highway authority asking it to confirm that the way is a highway and that the highway authority is liable to repair it.<span class="citation"><a href="#fn42" class="footnote-ref" id="fnref42"><sup>42</sup></a></span> If the highway authority does not reply or admit this is so within one month, the complainant may seek an order from the Crown Court ordering the highway authority to repair the highway.<span class="citation"><a href="#fn43" class="footnote-ref" id="fnref43"><sup>43</sup></a></span> If the highway authority does admit this, then the complainant has 6 months to apply to the Magistrates’ Court for an order that the highway authority repair the highway.<span class="citation"><a href="#fn44" class="footnote-ref" id="fnref44"><sup>44</sup></a></span> In some circumstances the complainant can secure the Magistrates’ Court’s permission to undertake the repairs himself<span class="citation"><a href="#fn45" class="footnote-ref" id="fnref45"><sup>45</sup></a></span> and recover the costs of so doing from the highway authority.<span class="citation"><a href="#fn46" class="footnote-ref" id="fnref46"><sup>46</sup></a></span></p>
+</div>
+<div id="damages-for-breach-of-duty" class="section level3 hasAnchor" number="2.6.2">
+<h3><span class="header-section-number">2.6.2</span> Damages for Breach of Duty<a href="public-rights-of-way.html#damages-for-breach-of-duty" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A person injured by the failure of a highways authority to maintain a highway may bring an action for damages for breach of the the statutory duty contained in the HA 1980.<span class="citation"><a href="#fn47" class="footnote-ref" id="fnref47"><sup>47</sup></a></span> The highway authority has a defence if it can show that it had taken such care in all the circumstances as was reasonably required to ensure that the highway was not dangerous for traffic.<span class="citation"><a href="#fn48" class="footnote-ref" id="fnref48"><sup>48</sup></a></span></p>
+</div>
+</div>
+<div id="improvements" class="section level2 hasAnchor" number="2.7">
+<h2><span class="header-section-number">2.7</span> Improvements<a href="public-rights-of-way.html#improvements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Powers to make improvements HA1980 s. 62 et seq</p>
+</div>
+<div id="remedies-for-damage-caused-by-third-parties" class="section level2 hasAnchor" number="2.8">
+<h2><span class="header-section-number">2.8</span> Remedies for Damage caused by Third Parties<a href="public-rights-of-way.html#remedies-for-damage-caused-by-third-parties" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A highways authority has a statutory right to seek damages against third parties where expenses have been incurred maintaining the highway by reason of damage caused by excessive weight passing along the highway or due to other ‘extraordinary traffic’.<span class="citation"><a href="#fn49" class="footnote-ref" id="fnref49"><sup>49</sup></a></span> Extraordinary traffic has been described as quality or quantity of articles carried or mode or time of use that substantially alters and increases the burden imposed by ordinary traffic on the road, causing additional damage and expenses.<span class="citation"><a href="#fn50" class="footnote-ref" id="fnref50"><sup>50</sup></a></span> In the context of bridleways, such damage might be caused by motorbikes, quadbikes, or motorised vehicles.</p>
+</div>
+<div id="obligations-of-neighbouring-landowners" class="section level2 hasAnchor" number="2.9">
+<h2><span class="header-section-number">2.9</span> Obligations of Neighbouring Landowners<a href="public-rights-of-way.html#obligations-of-neighbouring-landowners" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Some footpaths and bridleways cross agricultural fields rather than going around the edges. A cross-field path may only be ploughed or disturbed if it is not reasonably convenient to avoid the path.<span class="citation"><a href="#fn51" class="footnote-ref" id="fnref51"><sup>51</sup></a></span> Where this happens, the landowner must make good the surface of the path or way and indicate its line on the ground.<span class="citation"><a href="#fn52" class="footnote-ref" id="fnref52"><sup>52</sup></a></span> This must be done within 14 days where it is the first sowing of a particular crop and 24 hours in any other case.<span class="citation"><a href="#fn53" class="footnote-ref" id="fnref53"><sup>53</sup></a></span> This time can be extended by the highway authority for up to 28 days.<span class="citation"><a href="#fn54" class="footnote-ref" id="fnref54"><sup>54</sup></a></span> Failure by the landowner to comply is a criminal offence giving rise to a fine.<span class="citation"><a href="#fn55" class="footnote-ref" id="fnref55"><sup>55</sup></a></span></p>
+<p>Landowners are also required to ensure that the line on the ground of a highway is indicated so that it is apparent to members of the public wishing to use it and that their crops do not encroach on the highway.<span class="citation"><a href="#fn56" class="footnote-ref" id="fnref56"><sup>56</sup></a></span> Failure to do so is also a criminal offence.<span class="citation"><a href="#fn57" class="footnote-ref" id="fnref57"><sup>57</sup></a></span></p>
+<p>Where the highway is publicly maintainable, it is still the landowner’s responsibility to make sure that the route is not obstructed. Therefore, he must cut back overhanging trees and vegetation from the side of rights of way and not plant crops on headland paths.</p>
+<p>He could, therefore, be guilty of public nuisance or of committing offences under the HiA 1980 (eg removing soil or turf from any part of a highway1, wilfully obstructing the free passage along a highway2, depositing anything on a highway to the interruption of a user3 or resulting in a user being injured or endangered4).</p>
+<p>1 HiA 1980, s 131.
+2 HiA 1980, s 137.
+3 HiA 1980, s 148.
+4 HiA 1980, s 161.</p>
+<p>‘Section 154 of the Highways Act 1980 enables highway authorities and certain local authorities to require owners and occupiers of land whose trees, shrubs or hedges overhang highways to the extent of endangering or obstructing the passage of vehicles or pedestrians, to cut the vegetation back. Section 65 of the 2000 Act extends section 154 to apply to vegetation which endangers or obstructs the passage of horse-riders. Authorities will, therefore, be able to require that vegetation overhanging bridleways or carriageways is cut back to a height which is suitable for horse-riders.’</p>
+</div>
+<div id="planning-permission" class="section level2 hasAnchor" number="2.10">
+<h2><span class="header-section-number">2.10</span> Planning permission<a href="public-rights-of-way.html#planning-permission" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>‘Section 55(2)(b) of the Town and Country Planning Act 1990 provides that the carrying out by a local highway authority of any works required for the maintenance or improvement of a road, being works carried out on land within the boundaries of the road, do not involve “development” so as to require planning consent.’</p>
+<p>Planning permission will not be necessary if the works do not extend beyond the boundaries of the existing route. The carrying out of works required for the maintenance or improvement of the street or way on land within the boundaries of an unadopted street or private way is permitted development within the Town and Country Planning (General Permitted Development) Order 19953.</p>
+<p>3 SI 1995/418, art 3, Sch 2, Pt 9.</p>
+<!-- Chapters and sections are numbered by default. To un-number a heading, add a `{.unnumbered}` or the shorter `{-}` at the end of the heading, like in this section. -->
+
+</div>
+</div>
+<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body">
+<div id="ref-AG2012" class="csl-entry">
+<span>‘Attorney General v Watford Rural District Council [1912] 1 Ch 417’</span>
+</div>
+<div id="ref-CA1968" class="csl-entry">
+<em>Countryside Act 1968</em> (Statute 1968)
+</div>
+<div id="ref-CRWA2000" class="csl-entry">
+<span>‘Countryside and Rights of Way Act 2000’</span>
+</div>
+<div id="ref-Dublin1903" class="csl-entry">
+<span>‘Dublin United Tramways Ltd v Fitzgerald [1903] AC 99’</span>
+</div>
+<div id="ref-Foley1910" class="csl-entry">
+<span>‘Foley’s Charity Trustees v Dudley Corp [1910] 1 KB 317’</span>
+</div>
+<div id="ref-Hereford1975" class="csl-entry">
+<span>‘Hereford &amp; Worcester CC v Newman [1975] 1 WLR 901’</span>
+</div>
+<div id="ref-HA1980" class="csl-entry">
+<span>‘Highways Act 1980’</span>
+</div>
+<div id="ref-Tunbridge1896" class="csl-entry">
+<span>‘Mayor of Tunbridge Wells v Baird [1896] AC 434’</span>
+</div>
+<div id="ref-Mitchell2006" class="csl-entry">
+<span>‘Mitchell v Department for Transport [2006] EWCA Civ 1089, [2006] 1 WLR 3356’</span>
+</div>
+<div id="ref-Halden1859" class="csl-entry">
+<span>‘R v High Halden Inhabitants (1859) 1 f &amp; f 678, 175 ER 903’</span>
+</div>
+<div id="ref-Sydenham2021" class="csl-entry">
+Sydenham A and Farthing N, <em><a href="">Public Rights of Way and Access to Land</a></em> (5th edn, Jordan Publishing 2021)
+</div>
+<div id="ref-Tithe1954" class="csl-entry">
+<span>‘Tithe Redemption Commissioners v Runcorn UDC [1954] 1 Ch 383’</span>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p><a href="#ref-CA1968"><em>Countryside Act 1968</em> (Statute 1968) s.30(1)</a>.<a href="public-rights-of-way.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><a href="#ref-CA1968">Ibid</a>.<a href="public-rights-of-way.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p><a href="#ref-CA1968">Ibid.30(3)</a>.<a href="public-rights-of-way.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>See also <a href="#ref-CRWA2000"><span>‘Countryside and Rights of Way Act 2000’</span> s.49(4)</a>.<a href="public-rights-of-way.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p><a href="#ref-HA1980"><span>‘Highways Act 1980’</span> s.329(1)</a>.<a href="public-rights-of-way.html#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p><a href="#ref-HA1980">Ibid</a>.<a href="public-rights-of-way.html#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p><a href="#ref-CA1968"><em>Countryside Act 1968</em> (n 1) s.30(1)</a>.<a href="public-rights-of-way.html#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p><a href="#ref-CRWA200"><strong>CRWA200?</strong></a><a href="public-rights-of-way.html#fnref8" class="footnote-back">↩︎</a></p></li>
+<li id="fn9"><p><a href="#ref-Sydenham2021">Angela Sydenham and Nigel Farthing, <em>Public Rights of Way and Access to Land</em> (5th edn, Jordan Publishing 2021)</a>, Preface to the First Edition.<a href="public-rights-of-way.html#fnref9" class="footnote-back">↩︎</a></p></li>
+<li id="fn10"><p><a href="#ref-HA1980"><span>‘Highways Act 1980’</span> (n 5) s.263(1)</a>.<a href="public-rights-of-way.html#fnref10" class="footnote-back">↩︎</a></p></li>
+<li id="fn11"><p><a href="#ref-Foley1910"><span>‘Foley’s Charity Trustees v Dudley Corp [1910] 1 KB 317’</span></a>, per Cozens-Hardy MR at p. 322.<a href="public-rights-of-way.html#fnref11" class="footnote-back">↩︎</a></p></li>
+<li id="fn12"><p><a href="#ref-Foley1910">Ibid</a>, per Fletcher Moulton LJ at p. 324.<a href="public-rights-of-way.html#fnref12" class="footnote-back">↩︎</a></p></li>
+<li id="fn13"><p><a href="#ref-Tithe1954"><span>‘Tithe Redemption Commissioners v Runcorn UDC [1954] 1 Ch 383’</span></a>, per Lord Denning at p. 407.<a href="public-rights-of-way.html#fnref13" class="footnote-back">↩︎</a></p></li>
+<li id="fn14"><p><a href="#ref-Tunbridge1896"><span>‘Mayor of Tunbridge Wells v Baird [1896] AC 434’</span></a>.<a href="public-rights-of-way.html#fnref14" class="footnote-back">↩︎</a></p></li>
+<li id="fn15"><p><a href="#ref-HA1980"><span>‘Highways Act 1980’</span> (n 5)</a> Schedule 12A, s.1.<a href="public-rights-of-way.html#fnref15" class="footnote-back">↩︎</a></p></li>
+<li id="fn16"><p><a href="#ref-HA1980">Ibid</a> Schedule 12A, s.1(3)(a).<a href="public-rights-of-way.html#fnref16" class="footnote-back">↩︎</a></p></li>
+<li id="fn17"><p><a href="#ref-HA1980">Ibid</a> Schedule 12A, s.1(3)(b).<a href="public-rights-of-way.html#fnref17" class="footnote-back">↩︎</a></p></li>
+<li id="fn18"><p><a href="#ref-AG2012"><span>‘Attorney General v Watford Rural District Council [1912] 1 Ch 417’</span></a>.<a href="public-rights-of-way.html#fnref18" class="footnote-back">↩︎</a></p></li>
+<li id="fn19"><p><a href="#ref-Sydenham2021">Sydenham and Farthing (n 9) para 8.21</a>.<a href="public-rights-of-way.html#fnref19" class="footnote-back">↩︎</a></p></li>
+<li id="fn20"><p><a href="#ref-HA1980"><span>‘Highways Act 1980’</span> (n 5) s.41</a>.<a href="public-rights-of-way.html#fnref20" class="footnote-back">↩︎</a></p></li>
+<li id="fn21"><p><a href="#ref-Dublin1903"><span>‘Dublin United Tramways Ltd v Fitzgerald [1903] AC 99’</span></a>.<a href="public-rights-of-way.html#fnref21" class="footnote-back">↩︎</a></p></li>
+<li id="fn22"><p><a href="#ref-Mitchell2006"><span>‘Mitchell v Department for Transport [2006] EWCA Civ 1089, [2006] 1 WLR 3356’</span></a>.<a href="public-rights-of-way.html#fnref22" class="footnote-back">↩︎</a></p></li>
+<li id="fn23"><p><a href="#ref-HA1980"><span>‘Highways Act 1980’</span> (n 5) s.329</a>.<a href="public-rights-of-way.html#fnref23" class="footnote-back">↩︎</a></p></li>
+<li id="fn24"><p><a href="#ref-Hereford1975"><span>‘Hereford &amp; Worcester CC v Newman [1975] 1 WLR 901’</span></a>.<a href="public-rights-of-way.html#fnref24" class="footnote-back">↩︎</a></p></li>
+<li id="fn25"><p><a href="#ref-HA2010"><strong>HA2010?</strong></a><a href="public-rights-of-way.html#fnref25" class="footnote-back">↩︎</a></p></li>
+<li id="fn26"><p><a href="#ref-HA2010"><strong>HA2010?</strong></a><a href="public-rights-of-way.html#fnref26" class="footnote-back">↩︎</a></p></li>
+<li id="fn27"><p><a href="#ref-HA2010"><strong>HA2010?</strong></a><a href="public-rights-of-way.html#fnref27" class="footnote-back">↩︎</a></p></li>
+<li id="fn28"><p><a href="#ref-Sydenham2021">Sydenham and Farthing (n 9) para 8.30</a>.<a href="public-rights-of-way.html#fnref28" class="footnote-back">↩︎</a></p></li>
+<li id="fn29"><p><a href="#ref-Halden1859"><span>‘R v High Halden Inhabitants (1859) 1 f &amp; f 678, 175 ER 903’</span></a>.<a href="public-rights-of-way.html#fnref29" class="footnote-back">↩︎</a></p></li>
+<li id="fn30"><p><a href="#ref-Burnside1968"><strong>Burnside1968?</strong></a><a href="public-rights-of-way.html#fnref30" class="footnote-back">↩︎</a></p></li>
+<li id="fn31"><p><a href="#ref-Goodes2000"><strong>Goodes2000?</strong></a><a href="public-rights-of-way.html#fnref31" class="footnote-back">↩︎</a></p></li>
+<li id="fn32"><p><a href="#ref-Goodes2000"><strong>Goodes2000?</strong></a><a href="public-rights-of-way.html#fnref32" class="footnote-back">↩︎</a></p></li>
+<li id="fn33"><p><a href="#ref-CA1968"><em>Countryside Act 1968</em> (n 1) s.30(3)</a>.<a href="public-rights-of-way.html#fnref33" class="footnote-back">↩︎</a></p></li>
+<li id="fn34"><p><a href="#ref-CRWA200"><strong>CRWA200?</strong></a><a href="public-rights-of-way.html#fnref34" class="footnote-back">↩︎</a></p></li>
+<li id="fn35"><p><a href="#ref-CRWA2000"><span>‘Countryside and Rights of Way Act 2000’</span> (n 4) s.49(4)</a>.<a href="public-rights-of-way.html#fnref35" class="footnote-back">↩︎</a></p></li>
+<li id="fn36"><p>Eg <a href="#ref-Griffiths1967"><strong>Griffiths1967?</strong></a><a href="public-rights-of-way.html#fnref36" class="footnote-back">↩︎</a></p></li>
+<li id="fn37"><p><a href="#ref-Meggs1968"><strong>Meggs1968?</strong></a><a href="public-rights-of-way.html#fnref37" class="footnote-back">↩︎</a></p></li>
+<li id="fn38"><p><a href="#ref-Mills1992"><strong>Mills1992?</strong></a><a href="public-rights-of-way.html#fnref38" class="footnote-back">↩︎</a></p></li>
+<li id="fn39"><p><a href="#ref-James1992"><strong>James1992?</strong></a><a href="public-rights-of-way.html#fnref39" class="footnote-back">↩︎</a></p></li>
+<li id="fn40"><p><a href="#ref-CA1968"><em>Countryside Act 1968</em> (n 1) s.30(3)</a>.<a href="public-rights-of-way.html#fnref40" class="footnote-back">↩︎</a></p></li>
+<li id="fn41"><p><a href="#ref-CRWA2000"><span>‘Countryside and Rights of Way Act 2000’</span> (n 4) s.49(4)</a>.<a href="public-rights-of-way.html#fnref41" class="footnote-back">↩︎</a></p></li>
+<li id="fn42"><p><a href="#ref-HA1980"><span>‘Highways Act 1980’</span> (n 5) s.56(1)</a>.<a href="public-rights-of-way.html#fnref42" class="footnote-back">↩︎</a></p></li>
+<li id="fn43"><p><a href="#ref-HA1980">Ibid.56(2)</a>.<a href="public-rights-of-way.html#fnref43" class="footnote-back">↩︎</a></p></li>
+<li id="fn44"><p><a href="#ref-HA1980">Ibid.56(4)</a>.<a href="public-rights-of-way.html#fnref44" class="footnote-back">↩︎</a></p></li>
+<li id="fn45"><p><a href="#ref-HA1980">Ibid.56(6)</a>.<a href="public-rights-of-way.html#fnref45" class="footnote-back">↩︎</a></p></li>
+<li id="fn46"><p><a href="#ref-HA1980">Ibid.56(7)</a>.<a href="public-rights-of-way.html#fnref46" class="footnote-back">↩︎</a></p></li>
+<li id="fn47"><p><a href="#ref-HA1980">Ibid.41</a>.<a href="public-rights-of-way.html#fnref47" class="footnote-back">↩︎</a></p></li>
+<li id="fn48"><p><a href="#ref-HA1980">Ibid.58</a>.<a href="public-rights-of-way.html#fnref48" class="footnote-back">↩︎</a></p></li>
+<li id="fn49"><p><a href="#ref-HA1980">Ibid.59</a>.<a href="public-rights-of-way.html#fnref49" class="footnote-back">↩︎</a></p></li>
+<li id="fn50"><p><a href="#ref-Hill1893"><strong>Hill1893?</strong></a><a href="public-rights-of-way.html#fnref50" class="footnote-back">↩︎</a></p></li>
+<li id="fn51"><p><a href="#ref-HA1980"><span>‘Highways Act 1980’</span> (n 5) s.134(1)</a>.<a href="public-rights-of-way.html#fnref51" class="footnote-back">↩︎</a></p></li>
+<li id="fn52"><p><a href="#ref-HA1980">Ibid.134(3)</a>.<a href="public-rights-of-way.html#fnref52" class="footnote-back">↩︎</a></p></li>
+<li id="fn53"><p><a href="#ref-HA1980">Ibid.134(7)</a>.<a href="public-rights-of-way.html#fnref53" class="footnote-back">↩︎</a></p></li>
+<li id="fn54"><p><a href="#ref-HA1980">Ibid.134(8)</a>.<a href="public-rights-of-way.html#fnref54" class="footnote-back">↩︎</a></p></li>
+<li id="fn55"><p><a href="#ref-HA1980">Ibid.134(4)</a>.<a href="public-rights-of-way.html#fnref55" class="footnote-back">↩︎</a></p></li>
+<li id="fn56"><p><a href="#ref-HA1980">Ibid.137A</a>.<a href="public-rights-of-way.html#fnref56" class="footnote-back">↩︎</a></p></li>
+<li id="fn57"><p><a href="#ref-HA1980">Ibid.137A(4)</a>.<a href="public-rights-of-way.html#fnref57" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="cross.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-PROW.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
