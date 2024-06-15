@@ -2,8 +2,7 @@ fig:nice-fig
 tab:nice-tab
 eq:binom
 thm:tri
-about
-usage
+overview
 render-book
 preview-book
 public-rights-of-way
@@ -16,9 +15,10 @@ duty-to-maintain
 standard-of-maintenance-by-the-highway-authority
 complaints-of-failure-to-repair
 damages-for-breach-of-duty
-improvements
+obstructions
 remedies-for-damage-caused-by-third-parties
 obligations-of-neighbouring-landowners
+improvements
 planning-permission
 cross
 chapters-and-sub-chapters
