@@ -20,6 +20,7 @@ powers-to-improve
 obstructions
 remedies-for-damage-caused-by-third-parties
 obligations-of-neighbouring-landowners
+reform
 creation-of-new-rights-of-way
 introduction-2
 statutory-orders
@@ -30,7 +31,10 @@ express-common-law-dediction
 implied-dedication-by-common-law
 implied-dedication-by-statute
 recognition-of-highways
-unused
+planning
+highway
+on-site
+off-site
 cross
 chapters-and-sub-chapters
 captioned-figures-and-tables
